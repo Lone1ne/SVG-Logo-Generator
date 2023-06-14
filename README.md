@@ -49,6 +49,8 @@ You can view your created logo by opening it in the browser!
 
 ## Tests
 
+The tests use the Jest as a testing framework. Each shape has its own test suite and the tests ensure that each shape's render method returns the correct SVG string while passing in the color red.
+
 ## Questions
 
 Have questions? Contact me through GitHub here: https://github.com/Lone1ne.
