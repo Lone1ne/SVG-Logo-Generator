@@ -13,6 +13,12 @@ inquirer
       message: "Which shape do you want to create?",
       choices: ["Circle", "Triangle", "Square"],
     },
+    {
+      type: "input",
+      name: "shapeColor",
+      message:
+        "What color should the shape be (color keyword or hexadecimal number)?",
+    },
   ])
   //after question completion, we pass in the users answers
   .then((answers) => {
@@ -20,17 +26,19 @@ inquirer
     let shape;
     switch (answers.shape) {
       case "Circle":
-        shape = new Circle("red");
+        shape = new Circle(answers.shapeColor);
         break;
       case "Triangle":
-        shape = new Triangle("red");
+        shape = new Triangle(answers.shapeColor);
         break;
       case "Square":
-        shape = new Square("red");
+        shape = new Square(answers.shapeColor);
         break;
     }
     //declare variable that will render the selceted shape
-    const svg = shape.render();
+    const svgShape = shape.render();
+    //construct svg and pass in template literal for the selected shape
+    const svg = `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">${svgShape}</svg>`;
     //writeFile to logo.svg passing in svg
     fs.writeFile("logo.svg", svg, (err) => {
       if (err) {
