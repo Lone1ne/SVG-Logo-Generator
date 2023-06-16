@@ -4,6 +4,6 @@ describe("Circle", () => {
   it("renders a circle", () => {
     const circle = new Circle("red");
     const renderCircle = circle.render();
-    expect(renderCircle).toBe(`<circle cx="50" cy="50" r="40" fill="red" />`);
+    expect(renderCircle).toBe(`<circle cx="125" cy="125" r="75" fill="red" />`);
   });
 });
