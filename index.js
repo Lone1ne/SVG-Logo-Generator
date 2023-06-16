@@ -24,6 +24,12 @@ inquirer
       name: "text",
       message:
         "Enter the text you would like displayed on the logo? (3 characters max)",
+      validate: (input) => {
+        if (input.length > 3) {
+          return "Text must be 3 characters or less";
+        }
+        return true;
+      },
     },
     {
       type: "input",
