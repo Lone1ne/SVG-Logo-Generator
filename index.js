@@ -8,18 +8,6 @@ const Square = require("./lib/square");
 inquirer
   .prompt([
     {
-      type: "list",
-      name: "shape",
-      message: "Which shape do you want to create?",
-      choices: ["Circle", "Triangle", "Square"],
-    },
-    {
-      type: "input",
-      name: "shapeColor",
-      message:
-        "What color should the shape be (color keyword or hexadecimal number)?",
-    },
-    {
       type: "input",
       name: "text",
       message:
@@ -34,7 +22,18 @@ inquirer
     {
       type: "input",
       name: "textColor",
-      message: "What color would you like the text to be?",
+      message: "What color text? (color keyword or hexadecimal number)",
+    },
+    {
+      type: "list",
+      name: "shape",
+      message: "Which shape do you want to create?",
+      choices: ["Circle", "Triangle", "Square"],
+    },
+    {
+      type: "input",
+      name: "shapeColor",
+      message: "What color shape? (color keyword or hexadecimal number)",
     },
   ])
   //after question completion, we pass in the users answers
