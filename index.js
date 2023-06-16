@@ -47,13 +47,13 @@ inquirer
         break;
     }
     // set svgText variable passing in the text and color
-    const svgText = `<text x="50" y="50" font-size="30" dominant-baseline="middle" text-anchor="middle" fill="${answers.textColor}">${answers.text}</text>`;
+    const svgText = `<text x="125" y="125" font-size="60" dominant-baseline="middle" text-anchor="middle" fill="${answers.textColor}">${answers.text}</text>`;
     //declare variable that will render the selceted shape
     const svgShape = shape.render();
     //construct svg and pass in template literal for the selected shape
     const svg = `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">${svgShape}${svgText}</svg>`;
     //writeFile to logo.svg passing in svg
-    fs.writeFile("logo.svg", svg, (err) => {
+    fs.writeFile("./examples/logo.svg", svg, (err) => {
       if (err) {
         console.log(err);
       }
