@@ -6,7 +6,7 @@ The SVG Logo Generator is a command-line application designed to easily generate
 
 ## Walkthrough
 
-View the walkthrough video here ----> https://drive.google.com/file/d/1y1k_AYgLG-U4dJ2pQ5kpx1p988R_E6t6/view?usp=sharing
+View the walkthrough video here ----> [SVG-Logo-Generator Walkthrough](https://drive.google.com/file/d/1y1k_AYgLG-U4dJ2pQ5kpx1p988R_E6t6/view?usp=sharing)
 
 ## Table of Contents
 
@@ -56,5 +56,5 @@ The tests use the Jest as a testing framework. Each shape has its own test suite
 
 ## Questions
 
-Have questions? Contact me through GitHub here: https://github.com/Lone1ne.
+Have questions? Contact me through GitHub here: [LONE1NE](https://github.com/Lone1ne)
 We look forward to hearing from you!
